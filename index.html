@@ -5,19 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
     <header class="flex justify-between items-center py-7 px-[54px]">
 
-        <img src="assets/images/logo.png" class="h-[51px] w-[185px]" alt="Logo Image">
+        <img src="assets/images/logo.png" class="h-[41px] w-[185px]" alt="Logo Image">
 
         <nav>
-            <a href="" class="text-base px-[37px]">Home</a>
-            <a href="" class="text-base px-[37px]">Shop</a>
-            <a href="" class="text-base px-[37px]">About</a>
-            <a href="" class="text-base px-[37px]">Contact</a>
+            <a href="" class="text-base px-[37px] font-medium">Home</a>
+            <a href="" class="text-base px-[37px] font-medium">Shop</a>
+            <a href="" class="text-base px-[37px] font-medium">About</a>
+            <a href="" class="text-base px-[37px] font-medium">Contact</a>
         </nav>
 
         <div class="flex">
@@ -36,6 +37,23 @@
         </div>
 
     </header>
+
+    <section style="background-image: url('assets/images/header.png'); background-size: contain;" class="h-[716px] flex items-center">
+        <!-- <img src="assets/images/header.png" alt=""> -->
+
+        <div class="grid grid-cols-2 p-[58px] my-auto">
+            <div></div>
+            <div class="bg-[#FFF3E3] px-[40px] pt-[52px] pb-[37px]">
+                <p class="text-base tracking-[3px] font-semibold">New Arrival</p>
+                <h1 class="text-[52px] text-[#B88E2F] leading-[62px] mt-1 font-bold">Discover Our New Collection</h1>
+                <p class="text-lg mt-[17px] leading-[24px] font-medium">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.
+                </p>
+
+                <button class="bg-[#B88E2F] py-[25px] px-[72px] mt-[46px] text-[#FFFFFF] font-bold">BUY NOW</button>
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>
