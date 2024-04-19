@@ -10,18 +10,18 @@
 
 <body>
 
-    <header class="flex justify-between items-center py-7 px-[54px]">
+    <header class="grid grid-cols-1 md:grid-cols-4 py-7 px-[54px]">
 
         <img src="assets/images/logo.png" class="h-[41px] w-[185px]" alt="Logo Image">
 
-        <nav>
+        <nav class="col-span-2 flex flex-nowrap">
             <a href="" class="text-base px-[37px] font-medium">Home</a>
             <a href="" class="text-base px-[37px] font-medium">Shop</a>
             <a href="" class="text-base px-[37px] font-medium">About</a>
             <a href="" class="text-base px-[37px] font-medium">Contact</a>
         </nav>
 
-        <div class="flex">
+        <div class="flex flex-nowrap mt-4 md:mt-0">
             <div class="mx-[22px]">
                 <img src="assets/icons/user.png" class="h-[28px] w-[28px] " alt="User">
             </div>
@@ -79,7 +79,71 @@
         <h1 class="text-center text-4xl font-bold">Our Products</h1>
 
 
-        <div class="grid gap-7 grid-cols-4 mt-[3.875rem]">
+        <div class="grid gap-7 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-[3.875rem]">
+            <div class="bg-[#F4F5F7] relative group">
+                <img src="assets/images/dining.png" alt="1" class="w-full h-[18rem]">
+                <div class="p-4 ">
+                    <h3 class="text-2xl font-semibold">Syltherine</h3>
+                    <p class="my-2 text-[#898989]">Stylish cafe chair</p>
+                    <div class="flex items-center justify-between">
+                        <span class="font-semibold text-xl">Rp 2.500.000</span>
+                        <span class="text-[#B0B0B0] line-through">Rp 3.500.000</span>
+                    </div>
+
+                </div>
+
+                <div class="absolute top-6 right-6 bg-[#E97171] h-[3rem] w-[3rem] rounded-full flex items-center justify-center">
+                    <span class="text-white">-30%</span>
+                </div>
+
+                <div class="hidden group-hover:block">
+                    <div class="absolute bg-[rgb(0,0,0)]/75 top-0 right-0 bottom-0 left-0 d-none">
+                        <div class="flex flex-col items-center justify-center w-full h-full">
+                            <button class="bg-white py-[0.75rem] px-[3.125rem] text-[#B88E2F] font-semibold">Add to cart</button>
+                            <div class="flex items-center justify-between w-full px-4 mt-6">
+                                <div class="flex items-center">
+                                    <img class="w-4 h-4 mr-1" src="assets/icons/share.png" alt="">
+                                    <span class="text-white">Share</span></div>
+                                <div><span class="text-white">Compare</span></div>
+                                <div><span class="text-white">like</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-[#F4F5F7] relative parent-product">
+                <img src="assets/images/dining.png" alt="1" class="w-full h-[18rem]">
+                <div class="p-4 ">
+                    <h3 class="text-2xl font-semibold">Syltherine</h3>
+                    <p class="my-2 text-[#898989]">Stylish cafe chair</p>
+                    <div class="flex items-center justify-between">
+                        <span class="font-semibold text-xl">Rp 2.500.000</span>
+                        <span class="text-[#B0B0B0] line-through">Rp 3.500.000</span>
+                    </div>
+
+                </div>
+
+                <div class="absolute top-6 right-6 bg-[#E97171] h-[3rem] w-[3rem] rounded-full flex items-center justify-center">
+                    <span class="text-white">-30%</span>
+                </div>
+
+                <div class="parent-product-hover">
+                    <div class="absolute bg-[rgb(0,0,0)]/75 top-0 right-0 bottom-0 left-0 d-none">
+                        <div class="flex flex-col items-center justify-center w-full h-full">
+                            <button class="bg-white py-[0.75rem] px-[3.125rem] text-[#B88E2F] font-semibold">Add to cart</button>
+                            <div class="flex items-center justify-between w-full px-4 mt-6">
+                                <div class="flex items-center">
+                                    <img class="w-4 h-4 mr-1" src="assets/icons/share.png" alt="">
+                                    <span class="text-white">Share</span></div>
+                                <div><span class="text-white">Compare</span></div>
+                                <div><span class="text-white">like</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div class="bg-[#F4F5F7] relative">
                 <img src="assets/images/dining.png" alt="1" class="w-full h-[18rem]">
                 <div class="p-4 ">
@@ -94,6 +158,21 @@
 
                 <div class="absolute top-6 right-6 bg-[#E97171] h-[3rem] w-[3rem] rounded-full flex items-center justify-center">
                     <span class="text-white">-30%</span>
+                </div>
+
+                <div class="parent-product-hover">
+                    <div class="absolute bg-[rgb(0,0,0)]/75 top-0 right-0 bottom-0 left-0 d-none">
+                        <div class="flex flex-col items-center justify-center w-full h-full">
+                            <button class="bg-white py-[0.75rem] px-[3.125rem] text-[#B88E2F] font-semibold">Add to cart</button>
+                            <div class="flex items-center justify-between w-full px-4 mt-6">
+                                <div class="flex items-center">
+                                    <img class="w-4 h-4 mr-1" src="assets/icons/share.png" alt="">
+                                    <span class="text-white">Share</span></div>
+                                <div><span class="text-white">Compare</span></div>
+                                <div><span class="text-white">like</span></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="bg-[#F4F5F7] relative">
@@ -111,37 +190,20 @@
                 <div class="absolute top-6 right-6 bg-[#E97171] h-[3rem] w-[3rem] rounded-full flex items-center justify-center">
                     <span class="text-white">-30%</span>
                 </div>
-            </div>
-            <div class="bg-[#F4F5F7] relative">
-                <img src="assets/images/dining.png" alt="1" class="w-full h-[18rem]">
-                <div class="p-4 ">
-                    <h3 class="text-2xl font-semibold">Syltherine</h3>
-                    <p class="my-2 text-[#898989]">Stylish cafe chair</p>
-                    <div class="flex items-center justify-between">
-                        <span class="font-semibold text-xl">Rp 2.500.000</span>
-                        <span class="text-[#B0B0B0] line-through">Rp 3.500.000</span>
+
+                <div class="parent-product-hover">
+                    <div class="absolute bg-[rgb(0,0,0)]/75 top-0 right-0 bottom-0 left-0 d-none">
+                        <div class="flex flex-col items-center justify-center w-full h-full">
+                            <button class="bg-white py-[0.75rem] px-[3.125rem] text-[#B88E2F] font-semibold">Add to cart</button>
+                            <div class="flex items-center justify-between w-full px-4 mt-6">
+                                <div class="flex items-center">
+                                    <img class="w-4 h-4 mr-1" src="assets/icons/share.png" alt="">
+                                    <span class="text-white">Share</span></div>
+                                <div><span class="text-white">Compare</span></div>
+                                <div><span class="text-white">like</span></div>
+                            </div>
+                        </div>
                     </div>
-
-                </div>
-
-                <div class="absolute top-6 right-6 bg-[#E97171] h-[3rem] w-[3rem] rounded-full flex items-center justify-center">
-                    <span class="text-white">-30%</span>
-                </div>
-            </div>
-            <div class="bg-[#F4F5F7] relative">
-                <img src="assets/images/dining.png" alt="1" class="w-full h-[18rem]">
-                <div class="p-4 ">
-                    <h3 class="text-2xl font-semibold">Syltherine</h3>
-                    <p class="my-2 text-[#898989]">Stylish cafe chair</p>
-                    <div class="flex items-center justify-between">
-                        <span class="font-semibold text-xl">Rp 2.500.000</span>
-                        <span class="text-[#B0B0B0] line-through">Rp 3.500.000</span>
-                    </div>
-
-                </div>
-
-                <div class="absolute top-6 right-6 bg-[#E97171] h-[3rem] w-[3rem] rounded-full flex items-center justify-center">
-                    <span class="text-white">-30%</span>
                 </div>
             </div>
             <div class="bg-[#F4F5F7] relative">
@@ -159,42 +221,30 @@
                 <div class="absolute top-6 right-6 bg-[#E97171] h-[3rem] w-[3rem] rounded-full flex items-center justify-center">
                     <span class="text-white">-30%</span>
                 </div>
-            </div>
-            <div class="bg-[#F4F5F7] relative">
-                <img src="assets/images/dining.png" alt="1" class="w-full h-[18rem]">
-                <div class="p-4 ">
-                    <h3 class="text-2xl font-semibold">Syltherine</h3>
-                    <p class="my-2 text-[#898989]">Stylish cafe chair</p>
-                    <div class="flex items-center justify-between">
-                        <span class="font-semibold text-xl">Rp 2.500.000</span>
-                        <span class="text-[#B0B0B0] line-through">Rp 3.500.000</span>
+
+                <div class="parent-product-hover">
+                    <div class="absolute bg-[rgb(0,0,0)]/75 top-0 right-0 bottom-0 left-0 d-none">
+                        <div class="flex flex-col items-center justify-center w-full h-full">
+                            <button class="bg-white py-[0.75rem] px-[3.125rem] text-[#B88E2F] font-semibold">Add to cart</button>
+                            <div class="flex items-center justify-between w-full px-4 mt-6">
+                                <div class="flex items-center">
+                                    <img class="w-4 h-4 mr-1" src="assets/icons/share.png" alt="">
+                                    <span class="text-white">Share</span></div>
+                                <div><span class="text-white">Compare</span></div>
+                                <div><span class="text-white">like</span></div>
+                            </div>
+                        </div>
                     </div>
-
-                </div>
-
-                <div class="absolute top-6 right-6 bg-[#E97171] h-[3rem] w-[3rem] rounded-full flex items-center justify-center">
-                    <span class="text-white">-30%</span>
                 </div>
             </div>
-            <div class="bg-[#F4F5F7] relative">
-                <img src="assets/images/dining.png" alt="1" class="w-full h-[18rem]">
-                <div class="p-4 ">
-                    <h3 class="text-2xl font-semibold">Syltherine</h3>
-                    <p class="my-2 text-[#898989]">Stylish cafe chair</p>
-                    <div class="flex items-center justify-between">
-                        <span class="font-semibold text-xl">Rp 2.500.000</span>
-                        <span class="text-[#B0B0B0] line-through">Rp 3.500.000</span>
-                    </div>
 
-                </div>
-
-                <div class="absolute top-6 right-6 bg-[#E97171] h-[3rem] w-[3rem] rounded-full flex items-center justify-center">
-                    <span class="text-white">-30%</span>
-                </div>
-            </div>
         </div>
 
     </section>
+
+    <footer>
+
+    </footer>
 </body>
 
 <script src="main.js "></script>

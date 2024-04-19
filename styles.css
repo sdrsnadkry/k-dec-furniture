@@ -2,3 +2,11 @@
 * {
     font-family: "Poppins", sans-serif;
 }
+
+.parent-product:hover .parent-product-hover {
+    display: block;
+}
+
+.parent-product-hover {
+    display: none;
+}
